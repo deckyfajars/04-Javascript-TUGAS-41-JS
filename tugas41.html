@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Pilih Warna Background</p>
+    <select class="" name="" id="mySelect" onchange="cek()">
+      <option value="red">Merah</option>
+      <option value="blue">Biru</option>
+      <option value="yellow">Kuning</option>
+      <option value="white">Putih</option>
+    </select>
+
+    <p>Saat Kamu Memilih Warna, Background Akan Berubah</p>
+
+    <script type="text/javascript">
+      function cek(){
+        var a = document.getElementById("mySelect");
+        if (a.value == "red"){
+          document.body.style.backgroundColor = "red";
+        } else {
+          if (a.value == "blue"){
+            document.body.style.backgroundColor = "blue";
+          } else {
+            if (a.value == "yellow"){
+              document.body.style.backgroundColor = "yellow";
+            } else {
+              document.body.style.backgroundColor = "white";
+            }
+          }
+        }
+
+      }
+    </script>
+  </body>
+</html>
